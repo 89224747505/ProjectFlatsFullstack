@@ -16,7 +16,7 @@ const Filter = ({selectedByValue, selectedByParams, callbackFetching}) => {
     const [numberVariants, setNumberVariants] = useState(0);
 
     const fetchingNumberVariants = async (queryString) => {
-        const response = await axios.get(`http://localhost:5000/api/elements?sv=${selectedByValue}&sp=${selectedByParams}${queryString}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/elements?sv=${selectedByValue}&sp=${selectedByParams}${queryString}`);
         setNumberVariants(response.data?.elements);
     }
 

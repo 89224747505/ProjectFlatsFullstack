@@ -24,18 +24,19 @@ function App() {
     }, [])
 
     const fetchingFilteredFlats = async (queryString) => {
-        const response = await axios.get(`http://localhost:5000/api/filter?sv=${selectedByValue}&sp=${selectedByParams}${queryString}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/filter?sv=${selectedByValue}&sp=${selectedByParams}${queryString}`);
         setFlats(response.data);
+        setCurrentPage(1);
     }
 
     const fetchingFlatByID = async(id) => {
-        const response = await axios.get(`http://localhost:5000/api/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/${id}`);
         setFlat(response.data);
         setModalVisible(true);
     }
 
     const fetchingFlatByFloorPosition = async (floor, position)=> {
-        const response = await axios.get(`http://localhost:5000/api/map?fl=${floor}&p=${position}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/map?fl=${floor}&p=${position}`);
         setFlat(response.data);
         setModalVisible(true);
     }
@@ -87,10 +88,13 @@ function App() {
         <FlatCards cards={[...flats].slice(currentPage*flatsPerPage-flatsPerPage, currentPage*flatsPerPage)} callback={(id)=>fetchingFlatByID(id)}/>
 
 
-
-        <Pagination totalFlats={flats.length} flatsPerPage={flatsPerPage} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
-      </div>
+          {(Math.ceil(flats.length/flatsPerPage) > 1)
+              ? <Pagination totalFlats={flats.length} flatsPerPage={flatsPerPage} currentPage={currentPage}
+                            setCurrentPage={setCurrentPage}/>
+              : null
+          }
+          </div>
   );
 }
-s
+
 export default App;
