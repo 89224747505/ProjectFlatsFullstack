@@ -1,0 +1,271 @@
+.myModal {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.myModalContent {
+    padding: 2rem;
+    margin: 2rem 1rem 0 1rem;
+    background: #FFFFFF;
+    border: 0.3rem solid #C5C5C5;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.MyModal__img {
+    width: 40rem;
+    height: 40rem;
+}
+
+.MyModal__img > img {
+    width:100%;
+    object-fit: contain;
+}
+.MyModalInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    width: 30rem;
+}
+
+
+.MyModalInformation__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyModalInformation__price > span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.25rem;
+}
+
+.MyModalInformation__rubleImg {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 1rem;
+}
+
+.MyModalInformation__rubleImg > img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.MyModalInformation__priceSqrMtr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.MyModalInformation__priceSqrMtr > span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color:#949694;
+}
+
+.MyModalInformation__rubleImgSqrMtr {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 1rem;
+}
+
+.MyModalInformation__rubleImgSqrMtr > img {
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.MyModalInformation__commonInfo {
+    margin: 3.75rem 0 2rem 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.9rem;
+    color: black;
+}
+
+.MyModalInformation__flexElement {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.MyModalInformation__flexElement > p {
+    margin-top: 2rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: black;
+}
+.MyModalInformation__flexElement > p:last-child {
+    font-weight: 600;
+}
+
+.closeBtn {
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn:active {
+    background: rgba(255, 76, 76, 1);
+    color:white;
+}
+
+@media (max-width: 500px) {
+    .myModal {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        background: rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+
+    .myModalContent {
+        width: 100%;
+        background: #FFFFFF;
+        border: 0.3rem solid #C5C5C5;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .MyModal__img {
+        width: 25rem;
+        height: 25rem;
+    }
+    .MyModalInformation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 30rem;
+    }
+    .MyModalInformation__commonInfo {
+        margin-top: 2rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: black;
+    }
+
+    .MyModalInformation__flexElement {
+        display: flex;
+        justify-content: space-around;
+        width: 100%
+    }
+
+    .MyModalInformation__flexElement > p {
+        margin-top: 1rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: black;
+    }
+}
+@media (min-width: 501px) and (max-width: 901px) {
+    .myModal {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        background: rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+
+    .myModalContent {
+        width: 100%;
+        background: #FFFFFF;
+        border: 0.3rem solid #C5C5C5;
+        border-radius: 0.625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .MyModal__img {
+        width: 30rem;
+        height: 30rem;
+    }
+    .MyModalInformation__commonInfo {
+        margin: 2rem 0 2rem 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.875rem;
+        line-height: 1.9rem;
+        color: black;
+    }
+
+    .MyModalInformation__flexElement {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .MyModalInformation__flexElement > p {
+        margin-top: 2rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: black;
+    }
+}

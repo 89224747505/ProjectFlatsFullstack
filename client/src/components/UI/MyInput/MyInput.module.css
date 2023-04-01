@@ -1,0 +1,37 @@
+
+.Inputs {
+    display:flex;
+    justify-content: center;
+    margin-top: 0.625rem;
+}
+
+.Inputs > input {
+    border: 0.07rem solid #A7A7A7;
+    background: white;
+    width: 50%;
+}
+
+.Inputs > input, input::-webkit-input-placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:#B5B4B4;
+    padding-left: 0.19rem;
+}
+
+.Inputs > input:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.Inputs > input:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+@media (max-width: 500px) {
+    .Inputs {
+        width: 20rem;
+        height: 2.5rem;
+    }
+}

@@ -1,0 +1,33 @@
+
+.btns {
+    display:flex;
+    justify-content: center;
+    margin-top: 0.625rem;
+}
+
+.disable {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.07rem solid #A7A7A7;
+    background: white;
+}
+
+.btns > button:first-child {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.btns > button:last-child {
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.active {
+    background: #FF4C4C;
+    font-weight: 600;
+    color:white;
+}
+
+@media (max-width: 500px) {
+    .disable {
+        font-size:1rem;
+    }
+}

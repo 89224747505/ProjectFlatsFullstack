@@ -1,0 +1,267 @@
+.filterByParams {
+    margin-top: 6.25rem;
+    padding: 2.5rem ;
+    width: 100%;
+    border: 0.3rem solid #C5C5C5;
+    border-radius: 0.6rem;
+    background: #FFFFFF;
+
+}
+
+.filterByParams__head {
+    display:flex;
+    justify-content: space-between;
+}
+
+.filterByParams__changeTheFlatName {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.filterByParams__defaultOptions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filterByParams__containerFloor {
+    margin-top: 1.875rem;
+    padding-right: 1rem;
+}
+
+.filterByParams__containerFloor > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.filterByParams__containerRooms {
+    margin-top: 1.875rem;
+    padding-right: 1rem;
+}
+
+.filterByParams__containerRooms > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.containerForPriceAndTotalArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.filterByParams__containerPrice {
+    margin-top: 1.875rem;
+    padding-right: 1rem;
+}
+.MyInputPrice{
+    width: 18.75rem;
+    height: 2.5rem;
+}
+.filterByParams__containerPrice > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.filterByParams__containerTotalArea {
+    margin-top: 1.875rem;
+}
+
+.filterByParams__containerTotalArea > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.MyInputTotalArea{
+    width: 13rem;
+    height: 2.5rem;
+}
+.containerForBtnsAndAdvOptions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filterByParams__advancedOptionsAndBtns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filterByParams__containerLiveArea {
+    margin-top: 1.875rem;
+}
+
+.filterByParams__containerLiveArea > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.MyInputLiveArea{
+    width: 10.4rem;
+    height: 2.5rem;
+}
+
+.filterByParams__containerKitchenArea {
+    margin: 1.875rem 0 0 1.875rem;
+}
+
+.filterByParams__containerKitchenArea > div:first-child {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.MyInputKitchenArea{
+    width: 10.4rem;
+    height: 2.5rem;
+}
+
+.filterByParams__ShowAndClearBtns {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 1.875rem;
+}
+
+.filterByParams__ClearBtn {
+    width: 7.5rem;
+    height: 2.5rem;
+    background: white;
+    border: 0.07rem solid #B2B2B2;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:black;
+}
+
+.filterByParams__ClearBtn:hover {
+    transition: 1s;
+    background:#EAEAEA
+}
+
+.filterByParams__ShowBtn {
+    margin-left: 1.25rem;
+    width: 16.25rem;
+    height: 2.5rem;
+    background: #FF4D4D;
+    border: 0.07rem solid #DA0707;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color:white;
+}
+
+.filterByParams__ShowBtn:hover {
+    transition: 1s;
+    background:#D94D4D;
+}
+
+
+
+@media (max-width: 500px) {
+    .filterByParams {
+        padding: 2rem 1rem;
+        background: rgba(255,255,255,0.8);
+    }
+    .filterByParams__head {
+        flex-wrap: wrap;
+    }
+    .MyInputPrice,
+    .MyInputTotalArea,
+    .MyInputLiveArea,
+    .MyInputKitchenArea {
+        width: 22rem;
+        height: 2.5rem;
+    }
+
+    .filterByParams__changeTheFlatName {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    .containerForPriceAndTotalArea {
+        flex-wrap: wrap;
+    }
+
+    .filterByParams__advancedOptionsAndBtns {
+        flex-wrap: wrap;
+    }
+
+    .filterByParams__containerKitchenArea {
+        margin-left: 0;
+    }
+    .filterByParams__ShowAndClearBtns {
+        justify-content: center;
+    }
+    .filterByParams__ClearBtn {
+        width: 10rem;
+        height: 3.5rem;
+        background: white;
+        border: 0.07rem solid #B2B2B2;
+        border-radius: 0.3rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        color:black;
+    }
+
+    .filterByParams__ShowBtn {
+        margin-left: 0;
+        width: 22rem;
+        height: 3.5rem;
+        background: #FF4D4D;
+        border: 0.07rem solid #DA0707;
+        border-radius: 0.3rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        color:white;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+    .filterByParams {
+        width: 100%;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1351px) {
+    .filterByParams {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 1600px) {
+    .filterByParams {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+h1 {
+    display: none;
+}
+.wrapper {
+    min-height: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hiddenAreaName {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 9.375rem;
+    color: white;
+    text-align: end;
+    line-height: 8.75rem;
+    display:none;
+}
+
+.containerTop {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 90%;
+}
+
+.containerRightSide {
+    margin-left: 6%;
+}
+
+.residentialAreaName {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 9.375rem;
+    color: white;
+    text-align: end;
+    line-height: 8.75rem;
+}
+
+.residentialAreaName__short {
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+@media (max-width: 500px) {
+    html, body {
+        font-size: 20px;
+    }
+
+    body {
+        min-width: 500px;
+    }
+
+    .hiddenAreaName {
+        display:block;
+        text-align: end;
+        margin: 2rem 0 0 0;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+
+    }
+    .hiddenAreaName > div:last-child {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .containerTop {
+        display: block;
+        width: 100%;
+    }
+    .residentialAreaName {
+        display:none;
+    }
+
+    .containerRightSide {
+        margin: 0;
+    }
+
+}
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    body {
+        min-width: 767px;
+    }
+
+    .hiddenAreaName {
+        display:block;
+        width: 90%;
+        text-align: end;
+        margin: 2rem 0 0 0;
+    }
+    .hiddenAreaName > div:last-child {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    .residentialAreaName {
+        display:none;
+    }
+
+    .containerRightSide {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .hiddenAreaName {
+        display:block;
+        width: 90%;
+        text-align: end;
+        margin: 2rem 0 5rem 0;
+    }
+
+    .hiddenAreaName > div:last-child {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .residentialAreaName {
+        display:none;
+    }
+    .containerTop{
+        flex-direction:column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .containerRightSide {
+        margin: 0;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1351px) {
+
+    html, body {
+        font-size: 12px;
+    }
+
+    .residentialAreaName > div:first-child,
+    .residentialAreaName > div:nth-child(2)  {
+        display:none;
+    }
+
+    .hiddenAreaName {
+        display:block;
+        width: 90%;
+        text-align: end;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .hiddenAreaName > div:last-child {
+        display:none;
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 1600px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1850px) {
+    html, body {
+        font-size: 14px;
+    }
+}

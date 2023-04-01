@@ -1,0 +1,36 @@
+.containerSorting {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 1.875rem;
+}
+
+.containerSorting > select:first-child {
+    margin-right: 1rem;
+}
+
+.containerSorting > select:last-child {
+    margin-left: 1rem;
+}
+
+
+
+@media (max-width: 500px) {
+    .containerSorting {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .containerSorting > select:first-child {
+        margin: 0;
+    }
+
+    .containerSorting > select:last-child {
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+    .containerSorting {
+        justify-content: center;
+    }
+}

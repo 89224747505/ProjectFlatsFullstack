@@ -1,0 +1,27 @@
+.btnCheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCheck > label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-left: 1rem;
+}
+
+.btnCheck > input {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.19rem;
+}
+
+@media (max-width: 500px) {
+    .btnCheck {
+        margin-top: 5rem;
+    }
+}
+
